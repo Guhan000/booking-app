@@ -1,0 +1,27 @@
+.navbar{
+    height: 50px;
+    background-color: #003580;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container{
+    display: flex;  
+    width: 100%;
+    max-width: 1024px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-button, .reg-button{
+    padding: 5px 10px;
+    color: #003580;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.logo{
+    color: white;
+    font-weight: 500;
+}
