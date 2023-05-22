@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {useNavigate} from 'react-router-dom';
 import {
   faBed,
   faCar,
@@ -15,6 +16,7 @@ import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 
 const Header = ({type}) => {
+  const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
   const [options, setOptions] = useState({
     adult: 1,
@@ -38,6 +40,12 @@ const Header = ({type}) => {
       };
     });
   };
+
+  const navigate = useNavigate();
+
+  const handleChange = () => {
+    navigate("/hotel", { state: {destination, date, options}})
+  }
 
   return (
     <div className="header">
@@ -87,6 +95,7 @@ const Header = ({type}) => {
               type="text"
               placeholder="Where are you going"
               className="headerInput"
+              onChange={e=>{setDestination(e.target.value)}}
             />
           </div>
           <div className="headerSearchItem">
@@ -179,7 +188,7 @@ const Header = ({type}) => {
             )}
           </div>
           <div className="headerSearchItem">
-            <button className="headerSearchBtn">Search</button>
+            <button className="headerSearchBtn" onClick={handleChange}>Search</button>
           </div>
         </div></>
         }
