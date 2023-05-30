@@ -104,3 +104,38 @@
     cursor: pointer;
     border-radius: 5px;
   }
+
+  /* @media (width < 1100px) and (width > 650px){
+    .searchItem{
+      flex-direction: column;
+      border: none;
+    }
+}
+
+@media (width < 649px) and (width > 480px){
+    .header-container{
+        max-width: 450px;
+        padding: 20px 0px 100px 0px;
+        
+    }
+    .headerListItem{
+        font-size: 12.5px;
+    }
+    .headerList{
+        flex-direction: column;
+    }
+}
+
+@media (width < 480px){
+    .header-container{
+        max-width: 350px;
+        padding: 20px 0px 100px 0px;
+        
+    }
+    .headerListItem{
+        font-size: 12.5px;
+    }
+    .headerList{
+        flex-direction: column;
+    }
+} */

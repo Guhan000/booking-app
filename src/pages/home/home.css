@@ -11,3 +11,9 @@
     max-width: 1024px;
     font-size: 20px;
 }
+
+@media (width<1024px) {
+    .homeTitle{
+        max-width: 950px;
+    }
+}

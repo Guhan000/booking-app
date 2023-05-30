@@ -149,3 +149,84 @@
     cursor: pointer;
 }
 
+
+@media (width < 1100px) and (width > 650px){
+    .header-container{
+        max-width: 600px;
+        padding: 20px 0px 100px 0px;
+        
+    }
+    .headerListItem{
+        font-size: 12.5px;
+    }
+    .headerSearch{
+        font-size: 12px;
+        max-width: max-content;
+    }
+}
+
+@media (width < 649px) and (width > 480px){
+    .header-container{
+        /* max-width: 450px; */
+        padding: 20px 10px 100px 10px;
+        
+    }
+    .headerListItem{
+        font-size: 12.5px;
+    }
+    .headerSearch{
+        font-size: 12.5px;
+        flex-direction: column;
+        height: 250px;
+        position: relative;
+    }
+    .date{
+        position: absolute;
+        top: 110px;
+        left: 30px;
+        z-index: 2;
+    }
+
+    .options{
+        top:150px
+    }
+    .headerSearchItem{
+        border-bottom: 1px solid black;
+    }
+    
+}
+
+
+@media (width < 480px){
+    .header-container{
+        /* max-width: 350px; */
+        padding: 20px 10px 100px 10px;
+        
+    }
+    .headerListItem{
+        font-size: 12.5px;
+    }
+    .headerList{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .headerSearch{
+        font-size: 12.5px;
+        flex-direction: column;
+        height: 250px;
+        position: relative;
+    }
+
+    .date{
+        position: absolute;
+        top: 110px;
+        left: 30px;
+        z-index: 2;
+    }
+    .options{
+        top:150px
+    }
+    .headerSearchItem{
+        border-bottom: 1px solid black;
+    }
+}
