@@ -5,6 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 import { useLocation } from "react-router-dom";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
+import SearchItem from "../../components/searchItem/SearchItem";
 
 const List = () => {
   const location = useLocation();
@@ -29,17 +30,17 @@ const List = () => {
 
             <div className="lsItem">
               <label>Check-in Date</label>
-              <span onClick={()=>setOpenDate(!openDate)}>{`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(
-                date[0].endDate,
+              <span onClick={() => setOpenDate(!openDate)}>{`${format(
+                date[0].startDate,
                 "MM/dd/yyyy"
-              )}`}</span>
-              { openDate &&
+              )} to ${format(date[0].endDate, "MM/dd/yyyy")}`}</span>
+              {openDate && (
                 <DateRange
                   onChange={(item) => setDate([item.selection])}
                   minDate={new Date()}
                   ranges={date}
                 />
-              }
+              )}
             </div>
             <div className="lsItem">
               <label>Options</label>
@@ -84,10 +85,19 @@ const List = () => {
                   />
                 </div>
               </div>
-              </div>
-              <button>Search</button>
+            </div>
+            <button>Search</button>
           </div>
-          <div className="listResult"></div>
+          <div className="listResult">
+            <SearchItem />
+            <SearchItem />
+            <SearchItem />
+            <SearchItem />
+            <SearchItem />
+            <SearchItem />
+            
+            
+          </div>
         </div>
       </div>
     </div>
