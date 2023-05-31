@@ -89,3 +89,35 @@
     cursor: pointer;
 }
 
+@media (width < 1100px) and (width > 650px){
+    .listWrapper{
+        max-width: 600px;
+        flex-direction: column;
+           
+    }
+    .listSearch{
+        position: unset;
+    }
+}
+
+@media (width < 649px) and (width > 480px){
+    .listWrapper{
+        /* max-width: 450px; */
+        flex-direction: column;
+        padding: 0px 10px 0px 10px;   
+    }
+    .listSearch{
+        position: unset;
+    }
+}
+
+@media (width < 480px){
+    .listWrapper{
+        /* max-width: 350px; */
+        flex-direction: column;
+        padding: 20px 10px 100px 10px;
+    }
+    .listSearch{
+        position: unset;
+    }
+}

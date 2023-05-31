@@ -42,8 +42,6 @@
 @media (width < 480px){
     .nav-container{
         /* max-width: 350px; */
-        padding: 20px 0px 100px 0px;
-        
+        padding: 20px 10px 100px 10px;
     }
-    
 }

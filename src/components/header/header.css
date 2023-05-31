@@ -156,6 +156,10 @@
         padding: 20px 0px 100px 0px;
         
     }
+    .header-container.listMode{
+        max-width: 600px;
+        padding: 10px 0px;
+    }
     .headerListItem{
         font-size: 12.5px;
     }
@@ -170,6 +174,9 @@
         /* max-width: 450px; */
         padding: 20px 10px 100px 10px;
         
+    }
+    .header-container.listMode{
+        padding: 0px 10px;
     }
     .headerListItem{
         font-size: 12.5px;
@@ -202,6 +209,9 @@
         /* max-width: 350px; */
         padding: 20px 10px 100px 10px;
         
+    }
+    .header-container.listMode{
+        padding: 20px 10px 20px 10px;
     }
     .headerListItem{
         font-size: 12.5px;

@@ -11,7 +11,7 @@
 }
 
 .mailInputContainer>input{
-    width: 300px;
+    flex:3;
     height: 30px;
     padding: 10px;
     border: none;
@@ -20,11 +20,21 @@
 }
 
 .mailInputContainer>button{
-    height: 50px;
+    flex:2;
+    height: 30px;
     background-color: #0071c2;
     color: white;
     font-weight: 500;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media (width < 480px){
+    .mailTitle, .mailDesc{
+        width: max-content;
+    }
+    .mailInputContainer>input{
+        flex:2;
+    }
 }
