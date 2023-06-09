@@ -15,6 +15,7 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 import { SearchContext } from "../../context/SearchContext";
+import { AuthContext } from "../../context/AuthContext";
 
 const Header = ({type}) => {
   const [destination, setDestination] = useState("");
@@ -45,6 +46,7 @@ const Header = ({type}) => {
   const {dispatch} = useContext(SearchContext)
 
   const navigate = useNavigate();
+  const { user } = useContext(AuthContext);
 
   const handleChange = () => {
     dispatch({type:"NEW_SEARCH", payload:{destination,dates,options}})
@@ -90,7 +92,7 @@ const Header = ({type}) => {
           Get rewarded for your travels - unlock instant savings of 10% or more
           with a free booking.com account
         </p>
-        <button className="headerBtn">Sign In / Register</button>
+        {!user && <button className="headerBtn">Sign In / Register</button>}
 
         <div className="headerSearch">
           <div className="headerSearchItem">
