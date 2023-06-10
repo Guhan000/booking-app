@@ -2,7 +2,8 @@ import React, { useContext, useState } from "react";
 import "./login.css";
 import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
+
 
 const Login = () => {
   const [credentials, setCredientials] = useState({
@@ -37,7 +38,10 @@ const Login = () => {
     <input type="text" className="lInput" placeholder="username" id="username" onChange={handleChange}></input>
     <input type="password" className="lInput" placeholder="password" id="password" onChange={handleChange}></input>
     <button disabled={loading} onClick={handleClick} className="lButton">Login</button>
+    <p style={{marginTop:"10px"}}>Not Registered Yet? <Link to="/register" style={{textDecoration:"none", color:"#003580"}}>Register</Link> Here!</p>
     {error && <span>{error.message}</span>}
+    
+
     </div>
   </div>;
 };

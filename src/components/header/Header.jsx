@@ -99,9 +99,9 @@ const Header = ({type}) => {
             <FontAwesomeIcon icon={faBed} className="headerIcon" />
             <input
               type="text"
-              placeholder="Where are you going"
+              placeholder="Enter from listed below"
               className="headerInput"
-              onChange={e=>{setDestination(e.target.value)}}
+              onChange={e=>{setDestination(e.target.value.toLowerCase())}}
             />
           </div>
           <div className="headerSearchItem">

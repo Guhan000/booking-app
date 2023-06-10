@@ -1,0 +1,13 @@
+.profileContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.profileWrapper{
+    display: flex;
+    width: 100%;
+    max-width: 1024px;
+    gap:20px;
+}

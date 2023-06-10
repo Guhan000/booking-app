@@ -98,7 +98,7 @@
 .hotelDetailsPrice > h2 {
   font-weight: 300;
 }
-.hotelDetailsPrice > button {
+.hotelDetailsPrice button {
   border: none;
   padding: 10px 20px;
   background-color: #0071c2;
