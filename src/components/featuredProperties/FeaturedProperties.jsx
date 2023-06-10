@@ -12,6 +12,7 @@ const FeaturedProperties = () => {
       ) : (
         <>
           {data && data.map((item) => (
+            item && <>
             <div className="fpItem" key={item._id}> 
               <img
                 src={item.photos[0]}
@@ -26,6 +27,7 @@ const FeaturedProperties = () => {
                 <span>Excellent</span>
               </div>}
             </div>
+            </>
           ))}
         </>
       )}
