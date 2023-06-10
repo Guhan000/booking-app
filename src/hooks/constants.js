@@ -1,1 +1,1 @@
-export const base = "http://localhost:8800"
+export const base = "https://booking-app-backend-t1me.onrender.com"
