@@ -11,7 +11,7 @@ const FeaturedProperties = () => {
         "loading please wait "
       ) : (
         <>
-          {data && data.map && data.map((item) => (
+          {data && data.map((item) => (
             <div className="fpItem" key={item._id}> 
               <img
                 src={item.photos[0]}
