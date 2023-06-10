@@ -3,7 +3,7 @@ import "./featuredProperties.css";
 import useFetch from "../../hooks/useFetch";
 
 const FeaturedProperties = () => {
-  const { data, loading, error } = useFetch("/hotels");
+  const { data, loading, error } = useFetch("/hotelsZ&featured=true");
   console.log(data);
   return (
     <div className="fp">
