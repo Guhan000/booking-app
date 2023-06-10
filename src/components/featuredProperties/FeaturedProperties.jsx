@@ -3,7 +3,7 @@ import "./featuredProperties.css";
 import useFetch from "../../hooks/useFetch";
 
 const FeaturedProperties = () => {
-  const { data, loading, error } = useFetch("/hotels&featured=true");
+  const { data, loading, error } = useFetch("/hotels?featured=true");
   console.log(data);
   return (
     <div className="fp">
@@ -11,7 +11,7 @@ const FeaturedProperties = () => {
         "loading please wait "
       ) : (
         <>
-          {Object.entries(data).map((item) => (
+          {data && data.map((item) => (
             
             <div className="fpItem" key={item._id}> 
               <img
