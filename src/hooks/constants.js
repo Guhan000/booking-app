@@ -1,0 +1,1 @@
+export const base = "https://booking-app-backend-t1me.onrender.com"
